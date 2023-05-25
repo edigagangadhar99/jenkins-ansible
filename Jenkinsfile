@@ -11,7 +11,7 @@
 
  stage('Execute Ansible'){
   steps{   
-      ansiblePlaybook credentialsId: 'auser2', disableHostKeyChecking: true, installation: 'ansible', inventory: 'dhost.inv', playbook: 'apache.yml'
+      ansiblePlaybook credentialsId: 'pipe', disableHostKeyChecking: true, installation: 'ansible', inventory: 'dhost.inv', playbook: 'apache.yml'
       }
  }
     }
