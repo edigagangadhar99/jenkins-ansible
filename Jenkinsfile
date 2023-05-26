@@ -5,13 +5,13 @@
 
  stage('code checkout'){
   steps{
-      git branch: 'main', credentialsId: 'git_credentials', url: 'https://github.com/shashikanth-t/jenkins-ansible.git'
+   git branch: 'main', credentialsId: 'toper', url: 'https://github.com/edigagangadhar99/jenkins-ansible.git
        }
  }
 
  stage('Execute Ansible'){
   steps{   
-      ansiblePlaybook credentialsId: 'pipe', disableHostKeyChecking: true, installation: 'ansible', inventory: 'dhost.inv', playbook: 'apache.yml'
+      ansiblePlaybook credentialsId: 'pass', disableHostKeyChecking: true, installation: 'ansible', inventory: 'dhost.inv', playbook: 'apache.yml'
       }
  }
     }
