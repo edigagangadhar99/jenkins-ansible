@@ -5,7 +5,7 @@
 
  stage('code checkout'){
   steps{
-   git branch: 'main', credentialsId: 'toper', url: 'https://github.com/edigagangadhar99/jenkins-ansible.git
+   git branch: 'main', credentialsId: 'toper', url: 'https://github.com/edigagangadhar99/jenkins-ansible.git'
        }
  }
 
